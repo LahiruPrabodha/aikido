@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Lanka Aikido Association</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-red: #ff0000;
+            --dark-bg: #000000;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-bg);
+            color: #ffffff;
+        }
+
+        .navbar {
+            background-color: var(--dark-bg) !important;
+            padding: 1rem 0;
+        }
+
+        .navbar-brand img {
+            width: 60px;
+            height: 60px;
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-brand:hover img {
+            transform: scale(1.1);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                        url('/api/placeholder/1200/600');
+            background-size: cover;
+            background-position: center;
+            padding: 180px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-logo {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            color: var(--primary-red);
+            font-weight: bold;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-red);
+        }
+
+        .instructor-card {
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 2px solid var(--primary-red);
+            transition: transform 0.3s ease;
+            border-radius: 15px;
+        }
+
+        .instructor-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .location-card {
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 2px solid var(--primary-red);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-red);
+            border: none;
+            padding: 12px 35px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #cc0000;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+        }
+
+        footer {
+            background-color: var(--dark-bg);
+            border-top: 2px solid var(--primary-red);
+            padding: 30px 0;
+        }
+
+        .social-icon {
+            color: var(--primary-red);
+            font-size: 28px;
+            transition: all 0.3s ease;
+            margin: 0 10px;
+        }
+
+        .social-icon:hover {
+            color: #ffffff;
+            transform: translateY(-3px);
+        }
+
+        .nav-link {
+            color: #ffffff !important;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            padding: 0.5rem 1rem !important;
+            margin: 0 0.5rem;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-red) !important;
+        }
+
+        .about-text {
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+			<img src="logo1.jpg" alt="Sri Lanka Aikido Association" style="float:left;width:42px;height:42px;">
+                <!--<svg width="60" height="60" viewBox="0 0 200 200">
+                    <circle cx="100" cy="100" r="100" fill="#000"/>
+                    <circle cx="100" cy="100" r="80" fill="#ff0000"/>
+                    <path d="M60,100 Q100,60 140,100 T220,100" fill="none" stroke="#000" stroke-width="8"/>
+                    <text x="50" y="120" fill="#fff" font-family="Arial" font-size="24">合気道</text>
+                </svg>-->
+                <span class="ms-2">Sri Lanka Aikido</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#instructors">Instructors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#locations">Locations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container animate-fade-in">
+		<img src="logo1.jpg" alt="Sri Lanka Aikido Association">
+            <!--<svg class="hero-logo" viewBox="0 0 200 200">
+                <circle cx="100" cy="100" r="100" fill="#000"/>
+                <circle cx="100" cy="100" r="80" fill="#ff0000"/>
+                <path d="M60,100 Q100,60 140,100 T220,100" fill="none" stroke="#000" stroke-width="8"/>
+                <text x="50" y="120" fill="#fff" font-family="Arial" font-size="24">合気道</text>
+            </svg>-->
+            <h1 class="display-4 mb-4">Welcome to Sri Lanka Aikido Association</h1>
+            <p class="lead mb-4">Discover the path of harmony through the art of Aikido</p>
+            <a href="#contact" class="btn btn-primary btn-lg">Start Your Journey</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">About Us</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="/api/placeholder/600/400" alt="Aikido Practice" class="img-fluid rounded mb-4">
+                </div>
+                <div class="col-lg-6">
+                    <p class="about-text">The Sri Lanka Aikido Association is committed to spreading the art and philosophy of Aikido, a Japanese martial art that fosters harmony, discipline, and personal growth. We offer a supportive and respectful environment for practitioners of all skill levels to explore and practice this unique martial art, with a focus on developing both physical abilities and inner resilience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section id="instructors" class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="section-title text-center">Our Instructors</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="instructor-card p-4">
+                        <img src="/api/placeholder/200/200" alt="Sensei Gamini" class="rounded-circle mx-auto d-block mb-3">
+                        <h3 class="text-center">Sensei Gamini Wickramaratne</h3>
+                        <p class="text-center text-danger">5th Dan Black Belt</p>
+                        <p>His teaching emphasizes the traditional techniques, philosophies, and principles of Aikido, creating a structured and engaging environment where students can grow both physically and mentally.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="instructor-card p-4">
+                        <img src="/api/placeholder/200/200" alt="Sensei Nagasinghe" class="rounded-circle mx-auto d-block mb-3">
+                        <h3 class="text-center">Sensei Nagasinghe</h3>
+                        <p class="text-center text-danger">4th Dan Black Belt</p>
+                        <p>His teaching style focuses on precision, discipline, and practical application, helping students at all levels to build confidence and mastery in their practice.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section id="locations" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Training Locations</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="location-card">
+                        <h3 class="text-danger">Kesbewa</h3>
+                        <p><i class="fas fa-map-marker-alt me-2 text-danger"></i>Fitness Arena</p>
+                        <p><i class="fas fa-clock me-2 text-danger"></i>5:30 PM - 7:30 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="section-title text-center">Join Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <p class="mb-4">Ready to start your journey in Aikido? Contact us to learn more about class schedules, membership options, and how to take the first steps toward your goals with the Sri Lanka Aikido Association.</p>
+                    <button class="btn btn-primary btn-lg">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <a href="https://www.facebook.com/profile.php?id=100092716448199&sk=reviews" target="_blank" class="social-icon">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <p class="mt-3 mb-0">&copy; 2024 Sri Lanka Aikido Association. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animation on scroll
+        window.addEventListener('scroll', function() {
+            const elements = document.querySelectorAll('.section-title, .instructor-card, .location-card');
+            elements.forEach(element => {
+                const position = element.getBoundingClientRect();
+                if(position.top < window.innerHeight - 100) {
+                    element.classList.add('animate-fade-in');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
