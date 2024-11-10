@@ -88,6 +88,206 @@
             background-color: rgba(0, 0, 0, 0.9);
             padding: 20px 0;
         }
+		
+		.schedule-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+                    url('/api/placeholder/1920/1080') center/cover fixed;
+        padding: 80px 0;
+        position: relative;
+    }
+
+    .schedule-title {
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        color: var(--primary-red);
+        text-align: center;
+        margin-bottom: 50px;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        position: relative;
+    }
+
+    .schedule-title::after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 4px;
+        background-color: var(--primary-red);
+        margin: 20px auto;
+    }
+
+    .schedule-card {
+        background: linear-gradient(45deg, rgba(0, 0, 0, 0.9), rgba(68, 0, 0, 0.9));
+        border: 2px solid var(--primary-red);
+        border-radius: 15px;
+        padding: 30px;
+        margin-bottom: 30px;
+        transform: translateY(0);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .schedule-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(255, 0, 0, 0.2);
+    }
+
+    .schedule-card .card-title {
+        color: var(--primary-red);
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .schedule-time {
+        font-size: 1.2rem;
+        color: white;
+        margin: 10px 0;
+        padding: 10px;
+        border-left: 3px solid var(--primary-red);
+        background: rgba(255, 0, 0, 0.1);
+    }
+
+    .schedule-icon {
+        font-size: 2.5rem;
+        color: var(--primary-red);
+        margin-bottom: 20px;
+    }
+
+    .location-badge {
+        display: inline-block;
+        background-color: var(--primary-red);
+        color: white;
+        padding: 5px 15px;
+        border-radius: 20px;
+        margin-bottom: 15px;
+    }
+	
+		.social-links {
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+		}
+		
+		.social-icon {
+			color: var(--primary-red);
+			font-size: 24px;
+			transition: transform 0.3s, color 0.3s;
+			text-decoration: none;
+		}
+		
+		.social-icon:hover {
+			transform: scale(1.2);
+			color: #ff3333;
+		}
+		
+		.fa-youtube:hover {
+			color: #ff0000;
+		}
+		
+		.fa-facebook:hover {
+			color: #1877f2;
+		}
+		
+		 .contact-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+                    url('/api/placeholder/1920/1080') center/cover fixed;
+        padding: 80px 0;
+    }
+
+    .contact-card {
+        background: linear-gradient(45deg, rgba(0, 0, 0, 0.9), rgba(68, 0, 0, 0.9));
+        border: 2px solid var(--primary-red);
+        border-radius: 15px;
+        padding: 30px;
+        margin-bottom: 30px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(255, 0, 0, 0.2);
+    }
+
+    .contact-icon {
+        font-size: 3rem;
+        color: var(--primary-red);
+        margin-bottom: 20px;
+    }
+
+    .contact-info {
+        font-size: 1.1rem;
+        color: white;
+        margin: 10px 0;
+        padding: 15px;
+        border-left: 3px solid var(--primary-red);
+        background: rgba(255, 0, 0, 0.1);
+    }
+
+    .contact-title {
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        color: var(--primary-red);
+        text-align: center;
+        margin-bottom: 50px;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .contact-title::after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 4px;
+        background-color: var(--primary-red);
+        margin: 20px auto;
+    }
+
+    .instructor-contact {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        padding: 15px;
+        background: rgba(255, 0, 0, 0.1);
+        border-radius: 10px;
+        transition: background 0.3s ease;
+    }
+
+    .instructor-contact:hover {
+        background: rgba(255, 0, 0, 0.2);
+    }
+
+    .instructor-avatar {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-right: 15px;
+        border: 2px solid var(--primary-red);
+    }
+
+    .map-container {
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+        border: 2px solid var(--primary-red);
+    }
+
+    .contact-cta {
+        background: var(--primary-red);
+        color: white;
+        padding: 15px 30px;
+        border-radius: 30px;
+        text-decoration: none;
+        display: inline-block;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin-top: 20px;
+    }
+
+    .contact-cta:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+        color: white;
+    }
     </style>
 </head>
 <body>
@@ -143,7 +343,7 @@
                     <p>At the Sri Lanka Aikido Association, we are devoted to sharing the art of Aikido, a Japanese martial art that emphasizes harmony, discipline, and self-growth. Our association provides a nurturing and structured environment for practitioners of all levels, helping them develop both physical techniques and mental resilience through Aikido's principles.</p>
                 </div>
                 <div class="col-lg-6">
-                    <img src="/api/placeholder/600/400" alt="Aikido Practice" class="img-fluid rounded">
+                    <img src="aikido_practise.webp"  width="25%" height="25%" alt="Aikido Practice" class="img-fluid rounded">
                 </div>
             </div>
         </div>
@@ -199,25 +399,7 @@
                 </button>
             </div>
 
-            <!-- Video Gallery -->
-            <!--<h3 class="mb-4">Training Videos</h3>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="ratio ratio-16x9">
-                        <img src="/api/placeholder/400/225" alt="Video placeholder 1" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="ratio ratio-16x9">
-                        <img src="/api/placeholder/400/225" alt="Video placeholder 2" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="ratio ratio-16x9">
-                        <img src="/api/placeholder/400/225" alt="Video placeholder 3" class="img-fluid">
-                    </div>
-                </div>
-            </div> -->
+            
 			<!-- Video Gallery -->
 			<h3 class="mb-4">Training Videos</h3>
 			<div class="row">
@@ -258,14 +440,14 @@
     </section>
 
     <!-- Schedule Section -->
-    <section id="schedule" class="py-5 bg-dark">
+    <!--<section id="schedule" class="py-5 bg-dark">
         <div class="container">
             <h2 class="section-title">Class Schedule</h2>
             <div class="row">
                 <div class="col-md-6 mb-4">
                     <div class="card schedule-card">
                         <div class="card-body">
-                            <h4 class="card-title">Colombo YMCA</h4>
+                            <h4 class="card-title">Colombo YMCA ( Volunteer )</h4>
                             <p class="card-text">
                                 Tuesday: 6:00 pm – 8:00 pm<br>
                                 Saturday: 4:30 pm – 6:30 pm
@@ -285,10 +467,54 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+	
+	<section id="schedule" class="schedule-section">
+    <div class="container">
+        <h2 class="schedule-title">Class Schedule</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6 mb-4">
+                <div class="schedule-card">
+                    <div class="text-center">
+                        <i class="fas fa-dojo schedule-icon"></i>
+                        <span class="location-badge">
+                            <i class="fas fa-map-marker-alt me-2"></i>Colombo YMCA
+                        </span>
+                        <h4 class="card-title">YMCA Training Center ( Volunteer ) </h4>
+                    </div>
+                    <div class="schedule-time">
+                        <i class="far fa-clock me-2"></i>Tuesday: 6:00 pm – 8:00 pm
+                    </div>
+                    <div class="schedule-time">
+                        <i class="far fa-clock me-2"></i>Saturday: 4:30 pm – 6:30 pm
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="schedule-card">
+                    <div class="text-center">
+                        <!--<i class="fas fa-dumbbell schedule-icon"></i>-->
+                        <span class="location-badge">
+                            <i class="fas fa-map-marker-alt me-2"></i>Kesbewa
+                        </span>
+                        <h4 class="card-title">Fitness Arena</h4>
+                    </div>
+                    <div class="schedule-time">
+                        <i class="far fa-clock me-2"></i>Wednesday: 5:30 pm – 7:30 pm
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="#contact" class="btn btn-danger btn-lg">
+                <i class="fas fa-user-plus me-2"></i>Join Our Classes
+            </a>
+        </div>
+    </div>
+</section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5">
+   <!-- <section id="contact" class="py-5">
         <div class="container">
             <h2 class="section-title">Contact Us</h2>
             <div class="row">
@@ -300,8 +526,8 @@
                     </p>
                     <p>
                         <strong>Phone:</strong><br>
-                        S.J.R. Gamini Wickramaratne: 07712345678<br>
-                        P.K. Nagasinghe: 07712345678
+                        S.J.R. Gamini Wickramaratne: +94778786357<br>
+                        P.K. Nagasinghe: +94718320565
                     </p>
                 </div>
                 <div class="col-lg-6">
@@ -320,17 +546,86 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="container">
-            <a href="https://www.facebook.com/profile.php?id=100092716448199&sk=reviews" target="_blank" class="social-icon">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <p class="mt-3 mb-0">&copy; 2024 Sri Lanka Aikido Association. All rights reserved.</p>
+    </section> -->
+	
+	<section id="contact" class="contact-section">
+    <div class="container">
+        <h2 class="contact-title">Contact Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="contact-card text-center mb-4">
+                    <i class="fas fa-map-marked-alt contact-icon"></i>
+                    <h4 class="text-white mb-4">Head Office</h4>
+                    <div class="contact-info">
+                        <i class="fas fa-building me-2"></i>
+                        No 40, Ekamuth Uyana, Gonamadiththa Road, Piliyandala
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="contact-card">
+                    <h4 class="text-white text-center mb-4">
+                        <i class="fas fa-users contact-icon d-block"></i>
+                        Our Instructors
+                    </h4>
+                    <div class="instructor-contact">
+                        <!--<img src="/api/placeholder/60/60" alt="Shihan Gamini" class="instructor-avatar">-->
+                        <div>
+                            <h5 class="text-white mb-1">Shihan S.J.R. Gamini Wickramaratne</h5>
+                            <p class="mb-0 text-light">
+                                <i class="fas fa-phone-alt me-2"></i>+94773291201
+                            </p>
+                        </div>
+                    </div>
+                    <div class="instructor-contact">
+                        <!--<img src="/api/placeholder/60/60" alt="Sensei Nagasinghe" class="instructor-avatar">-->
+                        <div>
+                            <h5 class="text-white mb-1">Sensei P.K. Nagasinghe</h5>
+                            <p class="mb-0 text-light">
+                                <i class="fas fa-phone-alt me-2"></i>+94718320565
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="contact-card text-center">
+                    <h4 class="text-white mb-4">Connect With Us</h4>
+                    <div class="d-flex justify-content-center gap-4">
+                        <a href="https://www.facebook.com/profile.php?id=100092716448199&sk=reviews" 
+                           class="contact-cta">
+                            <i class="fab fa-facebook me-2"></i>Follow on Facebook
+                        </a>
+                        <a href="https://www.youtube.com/@SriLankaAikidoAssociation-v1s" 
+                           class="contact-cta">
+                            <i class="fab fa-youtube me-2"></i>Watch on YouTube
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+	<!-- Footer -->
+	<footer class="text-center">
+		<div class="container">
+			<div class="social-links mb-3">
+				<a href="https://www.facebook.com/profile.php?id=100092716448199&sk=reviews" target="_blank" class="social-icon">
+					<i class="fab fa-facebook"></i>
+				</a>
+				<a href="https://www.youtube.com/@SriLankaAikidoAssociation-v1s" target="_blank" class="social-icon">
+					<i class="fab fa-youtube"></i>
+				</a>
+			</div>
+			<p class="mt-3 mb-0">&copy; 2024 Sri Lanka Aikido Association. All rights reserved.</p>
+		</div>
+	</footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
