@@ -1,2 +1,2 @@
-# aikido
+# Aikido
 Sri Lanka Aikido Association
