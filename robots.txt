@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lahiruprabodha.github.io/aikido/sitemap.xml
