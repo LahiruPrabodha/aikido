@@ -279,5 +279,20 @@
         box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
         color: white;
     }
+
+     /* Grading Section */
+     #grading {
+        background-color: #1a1a1a;
+    }
+
+    .grading-carousel .carousel-item {
+        background-color: #2a2a2a;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        background-color: #dc3545;
+    }
 	
 	
