@@ -2,45 +2,45 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Home Page -->
   <url>
-    <loc>https://lahiruprabodha.github.io/aikido/index.html</loc>
+    <loc>https://slaikido.lk/index.html</loc>
     <lastmod>2024-11-14</lastmod>
     <priority>1.0</priority>
   </url>
   
   <!-- Gallery Page -->
   <url>
-    <loc>https://lahiruprabodha.github.io/aikido/gallery.html</loc>
+    <loc>https://slaikido.lk/gallery.html</loc>
     <lastmod>2024-11-14</lastmod>
     <priority>0.8</priority>
   </url>
 
   <!-- Sections in Home Page -->
   <url>
-    <loc>https://lahiruprabodha.github.io/aikido/index.html#home</loc>
+    <loc>https://slaikido.lk/index.html#home</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://lahiruprabodha.github.io/aikido/index.html#about</loc>
+    <loc>https://slaikido.lk/index.html#about</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://lahiruprabodha.github.io/aikido/index.html#instructors</loc>
+    <loc>https://slaikido.lk/index.html#instructors</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://lahiruprabodha.github.io/aikido/index.html#gallery</loc>
+    <loc>https://slaikido.lk/index.html#gallery</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://lahiruprabodha.github.io/aikido/index.html#grading</loc>
+    <loc>https://slaikido.lk/index.html#grading</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lahiruprabodha.github.io/aikido/index.html#schedule</loc>
+    <loc>https://slaikido.lk/index.html#schedule</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lahiruprabodha.github.io/aikido/index.html#contact</loc>
+    <loc>https://slaikido.lk/index.html#contact</loc>
     <priority>0.8</priority>
   </url>
 </urlset>
