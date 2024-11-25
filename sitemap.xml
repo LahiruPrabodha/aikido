@@ -10,9 +10,13 @@
   <url>
     <loc>https://slaikido.lk/index.html</loc>
     <lastmod>2024-11-14</lastmod>
-    <priority>1.0</priority>
+    <priority>1.00</priority>
   </url>
-  
+    <url>
+    <loc>http://slaikido.lk/index.html</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>1.00</priority>
+  </url>
   <!-- Gallery Page -->
   <url>
     <loc>https://slaikido.lk/gallery.html</loc>
@@ -21,6 +25,18 @@
   </url>
 
   <!-- Sections in Home Page -->
+  <url>
+    <loc>http://slaikido.lk/index.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://slaikido.lk/index.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://slaikido.lk/img/logo.webp</loc>
+    <priority>0.9</priority>
+  </url>
   <url>
     <loc>https://slaikido.lk/index.html#home</loc>
     <priority>0.9</priority>
