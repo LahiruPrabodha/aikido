@@ -387,3 +387,55 @@
             font-size: 0.875rem;
         }
     }
+
+    /* Register Button */
+
+    .register-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a6f);
+            color: white;
+            text-decoration: none;
+            padding: 18px 40px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(238, 90, 111, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .register-btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .register-btn:hover:before {
+            left: 100%;
+        }
+
+        .register-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(238, 90, 111, 0.6);
+            background: linear-gradient(45deg, #ff5252, #e91e63);
+        }
+
+        .register-btn:active {
+            transform: translateY(-1px);
+            transition: transform 0.1s;
+        }
+
+        .icon {
+            margin-right: 8px;
+            font-size: 1.1em;
+        }
